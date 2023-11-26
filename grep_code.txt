@@ -1,0 +1,8 @@
+$ git diff HEAD~1 HEAD | grep '^+' code_add.txt | grep -v '\.txt$' > fina_add.txt
+
+// above code gets the commited code which is added
+
+$ git diff HEAD~1 HEAD | grep '^-' code_removed.txt | grep -v '\.txt$' > fina_removed.txt
+
+// above code gets the commited code which is removed
+
